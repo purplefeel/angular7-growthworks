@@ -2,26 +2,58 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
+## Run
+
+`npm install`
+`npm start`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## About the project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This is a test project.
 
-## Build
+Data objects :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The application should provide UI for data manipulation. Example of data object provided below:
 
-## Running unit tests
+`{
+  "id": 12,
+  "title": "Paris",
+  "color": "#d14836",
+  "text": "Some long text"
+}`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### UI :
 
-## Running end-to-end tests
+  Page should contain 2 areas. Sidebar and main area.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+  #### Sidebar
 
-## Further help
+  Color at the left reflects color value of data object.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  - #X it is id of data object.
+  - Paris, New York, etc it is title value of data object.
+  - #199 item is selected now.
+
+  #### Main area
+
+  Should contain editable table with elements.
+
+  Columns:
+
+  -	Id
+  -	Title
+  - Color
+
+  Below the table, should be the textarea, that reflects text value of selected at the sidebar element.
+
+### Functionality : 
+
+-	Add element
+-	Remove element
+-	Modify element
+
+Any changes should be reflected at all components.
